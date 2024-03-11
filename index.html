@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js" integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <section class="nav">
+        <section class="careerButton">
+            <button>Career Ideas Salary</button>
+                </section>
+        <h1>Budget Your Life</h1>
+        </section>
+
+    <section class="wrapper">
+
+        <section class="calc1">
+            <section id="pie">
+
+                <canvas id="canvas"></canvas>
+            </section>
+
+            <section class="table">
+                <h3 id="housing">Housing</h3>
+                <h3 id="transportation">Transportation</h3>
+                <h3 id="entertainment">Entertainment</h3>
+                <h3 id="groceries">Groceries</h3>
+                <h3 id="savings">Savings</h3>
+                <h3 id="debt">Debt</h3>
+                <h3 id="taxes">Taxes</h3>
+            </section>
+        </section>
+
+        <!-- This is for first step -->
+        <section class="frame" id="frameone">
+            <section class="maininput">
+                <form class="income">
+                    <label for="annual">Enter gross annual income</label>
+                    <input oninput="values()" id="annualInput" class="annual">
+                    <label for="monthly">Enter gross monthly income</label>
+                    <input oninput="values()" id="monthlyInput" class="monthly">
+                </form>
+            </section>
+            <section class="button">
+                <button class="next" id="nextBtn"  onlick="nextFrame()">Next</button>
+            </section>
+        </section>
+        <!-- End of first step -->
+
+        <!-- This is second step for housing -->
+        <section id="frametwo" class="frame hide">
+            <section class="input2">
+                <form class="housing">
+                    <label for="rent">Monthly rent</label>
+                    <input class="rent">
+                    <label for="hoa">Hoa fees</label>
+                    <input class="hoa">
+                    <label for="repair">Home repair</label>
+                    <input class="repair">
+                </form>
+                <p>Based off your entered Gross Monthly Income, you can afford approximately $ in rent per month</p>
+            </section>
+            <section class="button1">
+                <button class="back">Back</button>
+                <button class="next">Next</button>
+            </section>
+        </section>
+        <!-- end of second step -->
+
+        <!-- This is third step for transportaion -->
+        <section id="framethree" class="frame hide">
+            <section class="table">
+                <h3>Housing</h3>
+                <h3>Transportation</h3>
+                <h3>Entertainment</h3>
+                <h3>Groceries</h3>
+                <h3>Savings</h3>
+                <h3>Debt</h3>
+                <h3>Taxes</h3>
+            </section>
+            <section class="input3">
+                <form class="transport">
+                    <label for="payment">Car payment</label>
+                    <input class="payment">
+                    <label for="maintain">Car maintenance</label>
+                    <input class="maintain">
+                </form>
+            </section>
+            <section class="button">
+                <button class="next" id="nextBtn" onlick="nextFrame()">Next</button>
+            </section>
+        </section>
+
+        <!-- This is the fourth step -->
+
+        <section id="framefour" class="frame hide">
+            <form class="entertainment">
+                <label for="subscriptions">Streaming Subscriptions</label>
+                <input type="text" class="subscriptions" id="subscriptions">
+
+                <label for="going-out">Going Out</label>
+                <input type="text" class="going-out" id="going-out">
+
+                <label for="hobbies">Hobbies</label>
+                <input type="text" class="hobbies" id="hobbies">
+
+                <label for="gifts">Gifts</label>
+                <input type="text" class="gifts" id="gifts">
+            </form>
+            <section class="button">
+                <button class="next" id="nextBtn" onlick="nextFrame()">Next</button>
+            </section>
+        </section>
+        <section class="frame hide" id="framefive">
+            <section class="table">
+                <h3>Housing</h3>
+                <h3>Transportation</h3>
+                <h3>Entertainment</h3>
+                <h3>Groceries</h3>
+                <h3>Savings</h3>
+                <h3>Debt</h3>
+                <h3>Taxes</h3>
+            </section>
+            <section class="input3">
+                <form class="groceries">
+                    <label for="food">Food</label>
+                    <input class="food">
+                    <label for="personal">Personal hygeine</label>
+                    <input class="personal">
+                </form>
+            </section>
+            <section class="button">
+                <button class="next" id="nextBtn" onlick="nextFrame()">Next</button>
+            </section>
+        </section>
+        <section class="frame hide" id="framesix">
+            <section class="input3">
+                <form class="debt">
+                    <label for="student">Student loan</label>
+                    <input class="student">
+                    <label for="credit">Credit loan</label>
+                    <input class="credit">
+                </form>
+            </section>
+            <section class="button">
+                <button class="next" id="nextBtn" onlick="nextFrame()">Next</button>
+            </section>
+    </section>
+
+</body>
+
+</html>

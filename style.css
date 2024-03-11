@@ -1,0 +1,88 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #D6E0E5;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    background-color: #293241;
+    color: white;
+    padding: 0.8em;
+}
+
+.wrapper {
+    display: flex;
+    border: 2px black solid;
+    margin-top: 1em;
+}
+
+.income {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#housing {
+    background-color: #E1B8AE;
+    border: 1px black solid;
+}
+
+#transportation {
+    background-color: #E0FBFC;
+    border: 1px black solid;
+}
+
+#entertainment {
+    background-color: #F7E3F4;
+    border: 1px black solid;
+}
+
+#groceries {
+    background-color: #D8C0F0;
+    border: 1px black solid;
+}
+
+#savings {
+    background-color: #85B3FF;
+    border: 1px black solid;
+}
+
+#debt {
+    background-color: #EEF5C0;
+    border: 1px black solid;
+}
+
+#taxes {
+    background-color: #F8E0BC;
+    border: 1px black solid;
+}
+
+.hide {
+    display: none;
+}
+
+button{
+    background-color: #293241;
+    color: white;
+    width: 50%;
+    font-size: large;
+    border-radius: 1em;
+}
+
+input{
+    background-color: #3D5A80;
+    opacity: 61%;
+}
+
+.careerButton {
+    width: 20%;
+}
+
+h1 {
+    margin-right: 42%;
+}
