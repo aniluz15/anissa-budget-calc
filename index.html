@@ -42,9 +42,9 @@
             <section class="maininput">
                 <form class="income">
                     <label for="annual">Enter gross annual income</label>
-                    <input oninput="values()" id="annualInput" class="annual">
+                    <input oninput="values()" type="number" id="annualInput" class="annual">
                     <label for="monthly">Enter gross monthly income</label>
-                    <input oninput="values()" id="monthlyInput" class="monthly">
+                    <input oninput="values()" type="number" id="monthlyInput" class="monthly">
                 </form>
             </section>
             <section class="button">
@@ -58,11 +58,11 @@
             <section class="input2">
                 <form class="housing">
                     <label for="rent">Monthly rent</label>
-                    <input class="rent">
-                    <label for="hoa">Hoa fees</label>
-                    <input class="hoa">
+                    <input id="rent" oninput="values()" class="rent">
+                    <label  for="hoa">Hoa fees</label>
+                    <input  id="hoa"oninput="values()" class="hoa">
                     <label for="repair">Home repair</label>
-                    <input class="repair">
+                    <input id="repair" oninput="values()" class="repair">
                 </form>
                 <p>Based off your entered Gross Monthly Income, you can afford approximately $ in rent per month</p>
             </section>

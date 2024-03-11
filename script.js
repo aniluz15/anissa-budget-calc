@@ -69,12 +69,36 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function values(){
-    let annualGross = document.getElementById("#annualInput").value; 
-    let monthlyInput = document.getElementById("#monthlyInput").value;
-    let frameInput = annualGross.value + monthlyInput.value;
-    document.getElementbyId("housing").innerHTML = "$ " + frameInput;
+    var annualGross = document.getElementById("annualInput").value
+    var monthlyGross = document.getElementById("monthlyInput").value
+    var added = parseInt(annualGross) + parseInt(monthlyGross);
+    document.getElementById("housing").innerHTML = added;
+
+    var rent = document.getElementById("rent").value
+    var hoa = document.getElementById("hoa").value
+    var repair = document.getElementById("repair").value
+    var total = parseInt(rent) + parseInt(hoa) + parseInt (repair)
+    document.getElementById("transportation").innerHTML = total;
+    
 }
 
+
+    // function add () {
+    //     // (A) GET THE VALUE FROM THE TEXT BOXES
+    //     // NOTE - WE PARSE THEM AS INTEGER
+    //     var x = parseInt(document.getElementById("annualInput").value);
+    //     var y = parseInt(document.getElementById("monthlyInput").value);
+      
+    //     // (B) ADDITION
+    //     // NOW THEY ADD PROPLERLY, NOT CONCATENATE
+    //     console.log(typeof x); // number
+    //     console.log(typeof y); // number
+    //     var result = x + y;
+      
+    //     // (C) OUPUT RESULT
+    //     document.getElementById("housing").innerHTML = "$" + result;
+
+    // }
 
 //gotta get data from form input or user data
 
@@ -107,7 +131,6 @@ function values(){
 
 //    }
 //    }
-
 
 
 
